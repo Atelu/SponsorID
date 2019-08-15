@@ -1,0 +1,21 @@
+
+.mat-form-field {
+  font-size: 14px;
+  width: 20%;
+  padding-left: 5%;
+
+}
+/* .example-container > * {
+  width: 100%; */
+  /* margin-left: 10%; */
+/* } */
+.my-card{
+  padding-left: 1%;
+}
+.md-fab {
+  line-height: 3.6rem;
+  min-width: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+}

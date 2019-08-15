@@ -1,0 +1,28 @@
+<form [formGroup]="tableform" (ngSubmit)="submitForm()">
+<div class="container" style="width: 100%" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="50px">
+    <div fxFlex="30%">
+        <div class="example-container">
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="Start Date" formControlName="dateFrom">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Sponsor ID" formControlName="sponsorId" />
+            </mat-form-field>
+        </div>
+    </div>
+    <div fxFlex="30%">
+        <div class="example-container">
+            <mat-form-field>
+                <input matInput [matDatepicker]="pickers" placeholder="End Date" formControlName="dateTo">
+                <mat-datepicker-toggle matSuffix [for]="pickers"></mat-datepicker-toggle>
+                <mat-datepicker #pickers></mat-datepicker>
+            </mat-form-field>
+            <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
+            <button mat-mini-fab color="primary" (click)=" getSponsor()" class="md-fab">Save</button>
+        </div>
+        </div>
+    </div>
+</div>
+</form>
